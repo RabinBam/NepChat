@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
   const navItems: NavItem[] = [
     { label: "Home", href: "/", icon: <Home size={20} /> },
-    { label: "About", href: "/about", icon: <Info size={20} /> },
+    { label: "chat", href: "/chat", icon: <Info size={20} /> },
     { label: "Services", href: "/services", icon: <Settings size={20} /> },
     { label: "Profile", href: "/profile", icon: <User size={20} /> },
     { label: "Contact", href: "/contact", icon: <Mail size={20} /> },
