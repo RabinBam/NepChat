@@ -1,6 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Menu, X, Home, Info, Mail, Settings, User } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  Mail,
+  Settings,
+  User,
+  MessageCircle,
+} from "lucide-react";
 
 interface NavItem {
   label: string;
@@ -23,7 +31,7 @@ const Navbar: React.FC = () => {
 
   const navItems: NavItem[] = [
     { label: "Home", href: "/", icon: <Home size={20} /> },
-    { label: "chat", href: "/chat", icon: <Info size={20} /> },
+    { label: "chat", href: "/chat", icon: <MessageCircle size={20} /> },
     { label: "Services", href: "/services", icon: <Settings size={20} /> },
     { label: "Profile", href: "/profile", icon: <User size={20} /> },
     { label: "Contact", href: "/contact", icon: <Mail size={20} /> },
@@ -50,7 +58,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <div className="bg-blue-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
-              Logo
+              NepChat
             </div>
           </div>
 
